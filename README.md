@@ -6,7 +6,7 @@
 #### Clone this Repository into your working directory, you will also need to compile with gcc together with the flag -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 # Included Built-Ins
 Our Shell supported the following built-in command
-alias: alias
+##### alias: alias
        Define or display aliases.
 
     Without arguments, `alias' prints the list of aliases in the reusable
@@ -21,7 +21,7 @@ alias: alias
     Exit Status:
     alias returns true unless a NAME is supplied for which no alias has been
     defined.
-    cd: cd
+##### cd: cd
     Change the shell working directory.
 
     Change the current directory to DIR.  The default DIR is the value of the
@@ -35,7 +35,7 @@ alias: alias
     Exit Status:
     Returns 0 if the directory is changed, and if $PWD is set successfully when
     -P is used; non-zero otherwise.
-    env: env
+##### env: env
     Print environment
 
     Options:
@@ -51,7 +51,7 @@ alias: alias
 
     Exit Status:
     Returns success unless PATTERN is not found or an invalid option is given.
-history: history
+##### history: history
     Display or manipulate the history list.
 
     Display the history list with line numbers, prefixing each modified
@@ -59,16 +59,16 @@ history: history
 
     Exit Status:
     Returns success unless an invalid option is given or an error occurs.
-    setenv: setenv
+##### setenv: setenv
     Set values of environment variables.
 
     Exit Status:
     Returns success unless an invalid option is given.
-unalias: unalias
+##### unalias: unalias
     Remove each NAME from the list of defined aliases.
 
     Return success unless a NAME is not an existing alias.
-    unsetenv: unsetenv
+##### unsetenv: unsetenv
 	Remove each NAME from the list of defined environment variables.
 
 	Options:
@@ -77,7 +77,7 @@ unalias: unalias
 
 	No...
 	Return success unless a NAME is not an existing alias.
-  unset: unset
+##### unset: unset
     Unset values and attributes of shell variables and functions.
 
     For each NAME, remove the corresponding variable or function.
@@ -85,3 +85,4 @@ unalias: unalias
 
     Exit Status:
     Returns success unless an invalid option is given or a NAME is read-only.
+    
